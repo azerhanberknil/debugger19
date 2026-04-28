@@ -9,4 +9,4 @@ This repository contains the source code for my professional portfolio website.
 
 
 ## 🌐 Live Demo
-You can visit the live version at: [KullaniciAdin.github.io](https://debugger19.github.io) 
+You can visit the live version at: [debugger19.github.io](https://debugger19.github.io) 
