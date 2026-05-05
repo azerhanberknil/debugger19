@@ -48,64 +48,7 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        /* --- HUB PROMO SECTION --- */
-        .hub-promo {
-            text-align: center;
-            background: #050505;
-            padding: 120px 0;
-            border-top: 1px solid #1a1a1a;
-            border-bottom: 1px solid #1a1a1a;
-        }
 
-        .hub-logo-link {
-            text-decoration: none;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-
-        .hub-logo-link:hover {
-            transform: scale(1.05);
-        }
-
-        .hub-logo-wrap {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: 'Inter', sans-serif;
-            text-transform: uppercase;
-            font-weight: 900;
-            line-height: 0.85;
-        }
-
-        .hub-text-top {
-            font-size: clamp(2rem, 8vw, 4.5rem);
-            color: var(--accent-color);
-            letter-spacing: -2px;
-            margin-bottom: 5px;
-        }
-
-        .hub-box {
-            background-color: #2a2a2a; /* Logodaki antrasit kutu rengi */
-            color: var(--accent-color);
-            font-size: clamp(1.5rem, 6vw, 3.5rem);
-            padding: 5px 20px;
-            letter-spacing: 2px;
-        }
-.hub-description {
-            margin-top: 40px;
-            font-size: clamp(1.2rem, 4vw, 1.8rem); /* lead-text ve vision-text ile aynı */
-            color: var(--text-main); /* Daha vurucu olması için ana beyaz renk */
-            max-width: 900px; /* Diğer metin bloklarıyla aynı genişlik */
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 300; /* İnce ve modern görünüm için */
-            line-height: 1.4; /* Okunabilirlik dengesi */
-        }
-
-        .hub-description b {
-            color: var(--accent-color); /* IT Rulez Hub vurgusu için sarı */
-            font-weight: 700;
-        }
         /* --- HERO SECTION --- */
         .hero {
             height: 100vh;
@@ -219,6 +162,66 @@
             margin: 0 0 10px 0;
             text-transform: uppercase;
             color: var(--accent-color);
+        }
+
+        /* --- HUB PROMO SECTION --- */
+        .hub-promo {
+            text-align: center;
+            background: #050505;
+            padding: 120px 0;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .hub-logo-link {
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .hub-logo-link:hover {
+            transform: scale(1.05);
+        }
+
+        .hub-logo-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 0.85;
+        }
+
+        .hub-text-top {
+            font-size: clamp(2rem, 8vw, 4.5rem);
+            color: var(--accent-color);
+            letter-spacing: -2px;
+            margin-bottom: 5px;
+        }
+
+        .hub-box {
+            background-color: #2a2a2a;
+            color: var(--accent-color);
+            font-size: clamp(1.5rem, 6vw, 3.5rem);
+            padding: 5px 20px;
+            letter-spacing: 2px;
+        }
+
+        .hub-description {
+            margin-top: 40px;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            color: var(--text-main);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+            line-height: 1.4;
+        }
+
+        .hub-description b {
+            color: var(--accent-color);
+            font-weight: 700;
         }
 
         /* --- CERTIFICATES --- */
@@ -342,11 +345,10 @@
         <div class="container">
             <h2>Specialties</h2>
             <div class="service-scroll">
-                <!-- Social Media Specialty Added -->
                 <div class="service-card">
                     <span class="icon-box" role="img" aria-label="Social Media Icon">📣</span>
                     <h3>Social Media Hub</h3>
-                    <p>Sharing cutting-edge tech news and AI insights through our dedicated "IT Rulez Hub" global channel.</p>
+                    <p>Sharing cutting-edge tech news and AI insights through our dedicated "Neural Perspective" global channel.</p>
                 </div>
                 <div class="service-card">
                     <span class="icon-box" role="img" aria-label="Web Development Icon">🌐</span>
@@ -391,7 +393,8 @@
             </p>
         </div>
     </section>
-<!-- HUB PROMO SECTION -->
+
+    <!-- HUB PROMO SECTION -->
     <section class="hub-promo">
         <div class="container">
             <a href="https://www.instagram.com/itrulezhub/" target="_blank" class="hub-logo-link">
@@ -401,10 +404,11 @@
                 </div>
             </a>
             <p class="hub-description">
-               Don't forget to follow our latest news and professional updates on Information Technology on our <b>IT Rulez Hub</b> social media accounts!
+                Don't forget to follow our latest news and professional updates on Information Technology on our <b>IT Rulez Hub</b> social media accounts!
             </p>
         </div>
     </section>
+
     <section class="certificates">
         <div class="container">
             <h2>Certifications</h2>
@@ -439,7 +443,6 @@
                     <h4>Blockchain & AI</h4>
                     <p>BTK Academy</p>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -452,6 +455,7 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/company/itrulez/" target="_blank">LinkedIn</a>
                 <a href="https://www.instagram.com/itrulezhub/" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/@itrulezhub" target="_blank">YouTube</a>
                 <a href="https://www.facebook.com/itrulezhub/" target="_blank">Facebook</a>
                 <a href="https://github.com/azerhanberknil" target="_blank">GitHub</a>
             </div>
@@ -459,7 +463,7 @@
             <div class="footer-bottom">
                 <a href="privacy.html" class="privacy-link">Privacy Policy</a>
                 <p class="copyright">
-                    © 2026 | IT Rulez | BUILT WITH 1'<span style="text-transform: none;">z</span> AND 0'<span style="text-transform: none;">z</span>
+                    © 2026 Azerhan Berk Nil | IT Rulez // BUILT WITH 1'<span style="text-transform: none;">z</span> AND 0'<span style="text-transform: none;">z</span>
                 </p>
             </div>
         </div>
