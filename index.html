@@ -7,7 +7,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="IT Rulez: 10+ years of expert IT consultancy in AI, Blockchain, Web Development, and Software QA. Managed by Azerhan Berk Nil.">
-    <meta name="keywords" content="IT Rulez, Azerhan Berk Nil, IT Consultant, AI Development, Blockchain Technology, Software Testing, IT, Information Technology, Web, Global, Türkiye IT, Georgia Freelance">
+    <meta name="keywords" content="IT Rulez, Azerhan Berk Nil, IT Consultant, AI Development, Blockchain Technology, Software Testing, Türkiye IT, Georgia Freelancer, Microsoft Learn, Python, Linux Security">
     <meta name="author" content="Azerhan Berk Nil">
 
     <!-- Open Graph / Social Media -->
@@ -48,7 +48,64 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+        /* --- HUB PROMO SECTION --- */
+        .hub-promo {
+            text-align: center;
+            background: #050505;
+            padding: 120px 0;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+        }
 
+        .hub-logo-link {
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .hub-logo-link:hover {
+            transform: scale(1.05);
+        }
+
+        .hub-logo-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            font-weight: 900;
+            line-height: 0.85;
+        }
+
+        .hub-text-top {
+            font-size: clamp(2rem, 8vw, 4.5rem);
+            color: var(--accent-color);
+            letter-spacing: -2px;
+            margin-bottom: 5px;
+        }
+
+        .hub-box {
+            background-color: #2a2a2a; /* Logodaki antrasit kutu rengi */
+            color: var(--accent-color);
+            font-size: clamp(1.5rem, 6vw, 3.5rem);
+            padding: 5px 20px;
+            letter-spacing: 2px;
+        }
+.hub-description {
+            margin-top: 40px;
+            font-size: clamp(1.2rem, 4vw, 1.8rem); /* lead-text ve vision-text ile aynı */
+            color: var(--text-main); /* Daha vurucu olması için ana beyaz renk */
+            max-width: 900px; /* Diğer metin bloklarıyla aynı genişlik */
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300; /* İnce ve modern görünüm için */
+            line-height: 1.4; /* Okunabilirlik dengesi */
+        }
+
+        .hub-description b {
+            color: var(--accent-color); /* IT Rulez Hub vurgusu için sarı */
+            font-weight: 700;
+        }
         /* --- HERO SECTION --- */
         .hero {
             height: 100vh;
@@ -167,7 +224,7 @@
         /* --- CERTIFICATES --- */
         .cert-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
         }
 
@@ -217,19 +274,40 @@
         }
 
         .social-links {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .social-links a {
             color: var(--text-dim);
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-transform: uppercase;
             letter-spacing: 2px;
+            transition: 0.3s;
         }
 
         .social-links a:hover { color: var(--text-main); }
+
+        .footer-bottom {
+            margin-top: 50px;
+        }
+
+        .privacy-link {
+            display: block;
+            margin-bottom: 15px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        .privacy-link:hover { opacity: 1; }
 
         .copyright {
             font-size: 0.8rem;
@@ -254,7 +332,7 @@
     <section class="bio-section">
         <div class="container">
             <p class="lead-text">
-                <b>IT Rulez</b> provides fast and effective solutions for all your IT challenges with <b>10+ years of industry experience</b>.
+                <b>IT Rulez</b> provides fast and effective solutions for all your IT challenges with <b>10+ years of industry experience</b>. 
                 Your trusted technology consultant for design, support, and testing in <b>Web, Software, Database, AI, and Blockchain Technology</b>.
             </p>
         </div>
@@ -264,6 +342,12 @@
         <div class="container">
             <h2>Specialties</h2>
             <div class="service-scroll">
+                <!-- Social Media Specialty Added -->
+                <div class="service-card">
+                    <span class="icon-box" role="img" aria-label="Social Media Icon">📣</span>
+                    <h3>Social Media Hub</h3>
+                    <p>Sharing cutting-edge tech news and AI insights through our dedicated "IT Rulez Hub" global channel.</p>
+                </div>
                 <div class="service-card">
                     <span class="icon-box" role="img" aria-label="Web Development Icon">🌐</span>
                     <h3>Web Development</h3>
@@ -302,36 +386,60 @@
         <div class="container">
             <p class="vision-text">
                 With detailed expertise in every field of technology and an up-to-date curiosity, 
-                <b>IT Rulez</b> will rewrite the rules for you as your most beneficial tech consultant.
+                <b>IT Rulez</b> will rewrite the rules for you as your most beneficial tech consultant. 
                 Started in <b>Türkiye</b>. Now <b>Worldwide!</b>
             </p>
         </div>
     </section>
-
+<!-- HUB PROMO SECTION -->
+    <section class="hub-promo">
+        <div class="container">
+            <a href="https://www.instagram.com/itrulezhub/" target="_blank" class="hub-logo-link">
+                <div class="hub-logo-wrap">
+                    <span class="hub-text-top">IT RULEZ</span>
+                    <span class="hub-box">HUB</span>
+                </div>
+            </a>
+            <p class="hub-description">
+               Don't forget to follow our latest news and professional updates on Information Technology on our <b>IT Rulez Hub</b> social media accounts!
+            </p>
+        </div>
+    </section>
     <section class="certificates">
         <div class="container">
             <h2>Certifications</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-icon" role="img" aria-label="SoloLearn Certification Logo">📜</div>
-                    <h4>HTML, PHP, JS</h4>
-                    <p>SoloLearn & Udemy</p>
-                </div>
+            <div class="cert-grid">                
                 <div class="cert-card">
                     <div class="cert-icon" role="img" aria-label="i-academy Expert Certification Logo">🎓</div>
                     <h4>Software & DB Expert</h4>
-                    <p>i-academy</p>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon" role="img" aria-label="BTK Academy Blockchain Certification Logo">🔗</div>
-                    <h4>Blockchain & AI</h4>
-                    <p>BTK Academy</p>
+                    <p>Microsoft Partner I-Academy</p>
                 </div>
                 <div class="cert-card">
                     <div class="cert-icon" role="img" aria-label="Turkcell Superonline Network Certification Logo">📡</div>
                     <h4>Network & ISS</h4>
                     <p>Turkcell Superonline</p>
                 </div>
+                <div class="cert-card">
+                    <div class="cert-icon" role="img" aria-label="Microsoft Python and Java Logo">🐍</div>
+                    <h4>C# & Python & Java</h4>
+                    <p>Microsoft</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon" role="img" aria-label="Linux and Network Security Logo">🛡️</div>
+                    <h4>Linux & NetSec</h4>
+                    <p>Microsoft</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon" role="img" aria-label="SoloLearn Certification Logo">📜</div>
+                    <h4>HTML, PHP, JS</h4>
+                    <p>SoloLearn & Udemy</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon" role="img" aria-label="BTK Academy Blockchain Certification Logo">🔗</div>
+                    <h4>Blockchain & AI</h4>
+                    <p>BTK Academy</p>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -340,13 +448,20 @@
         <div class="container">
             <h3>Let's talk about your next project</h3>
             <a href="mailto:info@rulezit.com" class="main-email">info@rulezit.com</a>
+            
             <div class="social-links">
-                <a href="https://linkedin.com/in/azerhan-berk-nil" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/company/itrulez/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/itrulezhub/" target="_blank">Instagram</a>
+                <a href="https://www.facebook.com/itrulezhub/" target="_blank">Facebook</a>
                 <a href="https://github.com/azerhanberknil" target="_blank">GitHub</a>
             </div>
+
+            <div class="footer-bottom">
+                <a href="privacy.html" class="privacy-link">Privacy Policy</a>
                 <p class="copyright">
-                © 2026 Azerhan Berk Nil | IT Rulez // BUILT WITH 1'<span style="text-transform: none;">z</span> AND 0'<span style="text-transform: none;">z</span>
-                </p>           
+                    © 2026 | IT Rulez | BUILT WITH 1'<span style="text-transform: none;">z</span> AND 0'<span style="text-transform: none;">z</span>
+                </p>
+            </div>
         </div>
     </footer>
 
